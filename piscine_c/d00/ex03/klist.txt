@@ -1,0 +1,6 @@
+Credentials cache: API:DF6D9FBF-97C1-432F-8070-2ED3FDBF2A18
+        Principal: madecreu@42.FR
+
+  Issued                Expires               Principal
+Jul 31 16:40:21 2017  Aug  7 16:40:21 2017  krbtgt/42.FR@42.FR
+Jul 31 16:42:06 2017  Aug  7 16:40:21 2017  ldap/ldap-proxy.42.fr@42.FR
