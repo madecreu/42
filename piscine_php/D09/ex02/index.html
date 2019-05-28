@@ -1,0 +1,47 @@
+<html>
+	<head>
+    <meta charset="utf-8">
+	<title>First To do</title>
+    <style lang=css>
+			body {
+				background: rgb(187, 223, 154);
+			}
+			#ft_list div{
+				border: black 1px solid;
+				display: inline-block;
+				background: rgb(77, 204, 115);
+				padding: 10px;
+				margin: 5px;
+			}
+			#ft_list div:hover {
+				background: rgb(40, 141, 70);
+				padding: 13px;
+				border: 2px;
+			}
+			#new{
+				border: black 1px solid;
+				display: block;
+				background: rgb(11, 146, 83);
+				margin: auto;
+				margin-bottom: 15px;
+				padding: 15px;
+				padding-left: 50px;
+				padding-right: 50px;
+				border-radius:10%;
+			}
+			#new:hover {
+				background: rgb(43, 196, 124);
+				border: 2px;
+			}
+        </style>
+    </head>
+	<body>
+		<button type='button' id="new">New</button>
+		<div id='ft_list'>
+		</div>
+		<script src='todo.js'></script>
+		<script>
+			check();
+		</script>
+	</body>
+</html>

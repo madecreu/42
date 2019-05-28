@@ -1,0 +1,151 @@
+body
+{
+	background-color: #505050;
+}
+header
+{
+	margin: auto;
+	width: 1650px;
+	background-color: #909090;
+	border-style: hidden;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 15px;
+}
+.logo
+{
+	height: 150px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.loupe
+{
+	display: 
+	margin-left: 800px;
+	position: absolute;
+	left: 1720px;
+    top: 30px;
+    width: 320px;
+}
+
+#ctn
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.menu, .obj, .cluster
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #909090;
+	border-radius: 10px;
+	width: 180px;
+	box-shadow: 10px 10px 15px;
+}
+
+.menu, .obj
+{
+	height: 520px;
+	width: 150px;
+}
+
+.cluster {
+	height: 700px;
+    width: 1220px;
+	margin: 0 20px;
+}
+
+#cluster_img
+{
+	width: 1200px;
+	margin: auto; 
+}
+.reload
+{
+	width: 30px;
+    position: absolute;
+    left: 2060px;
+    top: 20px;
+}
+.exit
+{
+	width: 30px;
+    position: absolute;
+    left: 2060px;
+    top: 150px;
+}
+#arrow, #chat, #oeil, #main, #outil, #book
+{
+	width: 80px;
+    margin: 10px 35px;
+}
+#oeil
+{
+	border: 5px solid red;
+	border-radius: 5px;
+	margin: 10px 30px;
+}
+#book
+{
+	height: 115px;
+    width: 80px;
+}
+#towel
+{
+	width: 75px;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+#wall
+{
+	background-image: url('resources/brick.jpg');
+	height: 78px;
+    width: 130px;
+    margin: 10px 10px;
+
+}
+.form
+{
+	width: 475px;
+    height: 150px;
+    position: absolute;
+    left: 450px;
+    top: 812px;
+	background-color: lightgreen;
+	border-radius: 10px;
+	box-shadow: 10px 10px 15px;
+	font-family: Arial;
+	font-size: 15px;
+
+}
+p
+{
+	margin: 8px 10px;
+}
+.toofat
+{
+	font-family: serif;
+	font-size: 35px;
+}
+.ombre
+{
+	text-shadow: 3px 5px 5px red;
+}
+.italic
+{
+	font-style: italic;
+}
+#text
+{
+	border-style: inset;
+	border-radius: 3px;
+    margin-left: 15px;
+    width: 315px;
+}
+#doft
+{
+	display: none;
+}

@@ -1,0 +1,61 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- doft.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: madecreu <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2018/05/28 16:40:58 by madecreu          #+#    #+#            -->
+<!-- Updated: 2018/05/28 16:40:59 by madecreu         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day of the 42</title>
+	<link rel="stylesheet" href="doft.css">
+</head>
+<body>
+	<header>
+		<img class="logo" src="resources/day_of_the_42.png">
+		<img class="loupe" src="resources/loupe.png">
+		<a href="http://www.disney.com">
+			<img class="reload" src="resources/reload.png" title="Recommencer au début">
+		</a>
+		<a href="http://www.relaischateaux.com">
+			<img class="exit" src="resources/close.gif" title="Déconnecter">
+		</a>
+	</header>
+	<div id="ctn">
+		<div class="menu">
+			<img id="arrow" src="resources/arrow.png" alt="Avancer" title="Avancer">
+			<img id="main" src="resources/main.png" alt="Prendre" title="Prendre">
+			<img id="oeil" class="needborder" src="resources/oeil.png" alt="Regarder" title="Regarder">
+			<img id="outil" src="resources/outil.png" alt="Utiliser" title="Utiliser">
+			<img id="chat" src="resources/chat-icon.png" alt="Parler" title="Parler">
+		</div>
+		<div class="cluster">
+			<img id="cluster_img" src="resources/cluster.jpg" alt="cluster" usemap="#cluster">
+			<map name="cluster">
+				<area shape="rect" coords="400,392 540,642" href="http://www.ikea.com">
+				<area shape="rect" coords="949,372 1169,542" href="http://www.apple.com">
+			</map>
+		</div>
+		<div class="obj">
+			<img id="book" src="resources/book.png" alt="Un bouquin" title="Le HTML/CSS pour les nuls">
+			<img id="towel" src="resources/towel.png" alt="une serviette" title="Je hais le HTML/CSS">
+			<div id="wall" alt="un mur" title="Ca c'est le mur contre lequel j'aimerais me defoncer le crane"></div>
+		</div>
+	</div>
+	<div class="form">
+		<p>Vous <span class="toofat">entrez</span> alors dans une grande piece remplie d'<span class="ombre">ordinateurs</span>...<br></p>
+		<p class="italic">- Bonjour, vous êtes nouveau ici ?<br></p>
+		<form>
+			<input id="text" type="text" name="answer">
+			<input id="button" type="submit" name="Repondre" value="Repondre">
+		</form>
+	</div>
+	<img id="doft" src="resources/doft.jpg">
+</body>
+</html>

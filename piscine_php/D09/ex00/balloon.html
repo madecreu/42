@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Balloon</title>
+        <style type="text/css">
+            #balloon {
+              width: 200px;
+              height: 200px;
+              border-radius: 100%;
+              margin: auto;
+              margin-top: 250px;
+            }
+            </style>
+    </head>
+    <body>
+
+        <div id="balloon" onmouseleave="leave()" onclick="clicked()" style="background: red;">
+
+        </div>
+        <script>
+            function leave(ballon) {
+                var ballon = document.getElementById('balloon');
+                if (ballon.offsetHeight > 205 ) {
+                    ballon.style.height = ballon.offsetHeight - 5 + 'px';
+                    ballon.style.width = ballon.style.height;
+                }
+                if (ballon.style.background === 'red') {
+                    ballon.style.background = 'blue';
+                } else if (ballon.style.background === 'blue') {
+                    ballon.style.background = 'green';
+                } else {
+                    ballon.style.background = 'red';
+                }
+            }
+            function clicked(ballon) {
+                var ballon = document.getElementById('balloon');
+                if (ballon.offsetHeight + 10 <= 420 ) {
+                    ballon.style.height = ballon.offsetHeight + 10 + 'px';
+                    ballon.style.width = ballon.style.height;
+                } else {
+                    ballon.style.height = 200 + 'px';
+                    ballon.style.width = ballon.style.height;
+                }
+                if (ballon.style.background === 'red') {
+                    ballon.style.background = 'green';
+                } else if (ballon.style.background === 'green') {
+                    ballon.style.background = 'blue'
+                } else {
+                    ballon.style.background = 'red';
+                }
+
+            }
+        </script>
+   
+    </body>
+</html>

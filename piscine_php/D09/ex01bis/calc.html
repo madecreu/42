@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calc</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    </head>
+    <body>
+            <script>
+                    setInterval(function () {alert("Please, use me...")}, 30000);
+                    $(document).ready(function() {
+				        $("#submit").click(function() {
+                        var nb1 = $("#firstNumber").val();
+                        var nb2 = $("#secondNumber").val();
+                        var symbol = $("#myselect").val();
+
+
+                        function is_int(value){
+                          if((parseFloat(value) == parseInt(value)) && !isNaN(value)){ 
+                              return true;
+                          } else {
+                              return false;
+                          }
+                        }
+                        if (is_int(nb1) && nb2 === '0') {
+                            if (symbol === '/' || symbol === '%') {
+                                console.log("It’s over 9000!" );
+                                alert("It’s over 9000!" );
+                                return;
+                            }
+                         
+                        }
+                        else if (!is_int(nb1) || !is_int(nb2)) {
+                            if (nb1 != '0' && nb2 != '0') {
+                                alert('Error :(');
+                                return;
+                            }
+                        }
+                        var number;
+                        switch(symbol) {
+                            case '+':
+                                number = parseFloat(nb1) + parseFloat(nb2);
+                                console.log(number);
+                                alert(number);
+                                break;
+                            case '-':
+                                number = parseFloat(nb1) - parseFloat(nb2);
+                                console.log(number);
+                                alert(number);
+                                break;
+                            case '/':
+                                number = parseFloat(nb1) / parseFloat(nb2);
+                                console.log(number);
+                                alert(number);
+                                break
+                            case '*':
+                                number = parseFloat(nb1) * parseFloat(nb2);
+                                console.log(number);
+                                alert(number);
+                                break
+                            case '%':
+                                number = parseFloat(nb1) % parseFloat(nb2);
+                                console.log(number);
+                                alert(number);
+                                break
+                            default:
+                                console.log('HOW DID YOU ACHIEVE THAT');
+                        }
+                    }) })
+                </script>
+        <div>
+            <input id="firstNumber" type="text"/>
+            <select id="myselect">
+                    <option value="+" selected>+</option> 
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                  </select>
+            <input id="secondNumber" type="text"/>
+            <input value="Try me!" type="submit" id="submit"/>
+        </div>   
+    </body>
+</html>

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #99ccff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+h2 {
+	color: #ffffff;
+	margin-bottom: 1em;
+}
+
+h3 {
+	color: #ffffff;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+h4 {
+	color: #0E539D;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+
+}
+
+td
+{
+border: 1px solid;
+width: 150;
+height: 250;
+}
+
+.game_name
+{
+float: center;
+font-weight: bold;
+font-size: 20px;
+}
+
+.p_admin {
+	margin-bottom: 1em;
+}
+
+.main-container {
+  background: #45ACAA; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #0E539D, #8DC26F);
+  background: -moz-linear-gradient(right, #0E539D, #8DC26F);
+  background: -o-linear-gradient(right, #0E539D, #8DC26F);
+  background: linear-gradient(to left, #0E539D, #8DC26F);
+  overflow: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+.main-items {
+  padding: 1rem;
+  background: #86D2F3; /* fallback for old browsers */
+}
+
+.main-right-menu {
+  float: right;
+  margin: 0 1em 1em 1em;
+  width: 25%;
+  background: #1698EE; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #0E539D, #2577ce);
+  background: -moz-linear-gradient(right, #0E539D, #2577ce);
+  background: -o-linear-gradient(right, #0E539D, #2577ce);
+  background: linear-gradient(to left, #0E539D, #2577ce);
+  padding: 1em;
+}
+
+.footer {
+  text-align: right;
+  padding: 1em;
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #0E539D, #8DC26F);
+  background: -moz-linear-gradient(right, #0E539D, #8DC26F);
+  background: -o-linear-gradient(right, #0E539D, #8DC26F);
+  background: linear-gradient(to left, #0E539D, #8DC26F);
+}
+
+/* Buying game */
+.list_line_buy {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.game_quantity {
+	margin-bottom: 3px;
+	padding: 6px 0px;
+	background-color: #7f8c8d;
+	border: none;
+}
+
+.game_buy {
+	background-color: #888888;
+	background-image: url('../img/panier1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 24px 24px;
+	padding: 6px 12px;
+	border: none;
+	cursor: pointer;
+	text-indent: -9999px
+}
+
+/*======== Displays ========*/
+/* a. categories */
+ul.tile-mosaic {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4em;
+}
+
+li.tiles {
+  max-width: 200px;
+  height: 200px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 2em;
+  margin: 0.5em;
+  background-color: #bdc3c7;
+}
+
+.tiles img {
+  max-width: 200px;
+  height: auto;
+}
+
+.tiles:hover {
+  background-color: #4CAF50;
+}
+
+/*======== Right menu list ========*/
+.menu-ul {
+  list-style: none;
+  margin: 0 1em 2em 1em;
+  text-align: center;
+}
+
+.category {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #4CAF50;
+}
+
+.product {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #f1c40f;
+}
+
+.category:hover, .product:hover {
+  background-color: #7f8c8d;
+}
